@@ -7,6 +7,7 @@ class L146_LRU_cache {
     private HashMap<Integer, Node> map = new HashMap<Integer, Node>();
     private Node head = new Node(-1, -1);
     private Node tail = new Node(-1, -1);
+
     public L146_LRU_cache(int capacity) {
         this.capacity = capacity;
         tail.prev = head;

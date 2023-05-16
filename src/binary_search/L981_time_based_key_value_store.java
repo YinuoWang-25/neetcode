@@ -7,9 +7,6 @@ import java.util.TreeMap;
 class L981_time_based_key_value_store {
     Map<String, TreeMap<Integer, String>> map;
 
-    /**
-     * Initialize your data structure here.
-     */
     public L981_time_based_key_value_store() {
         map = new HashMap<>();
     }

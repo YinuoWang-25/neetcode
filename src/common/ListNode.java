@@ -1,6 +1,6 @@
 package common;
 
-public class ListNode{
+public class ListNode {
     public int val;
     public ListNode next;
 

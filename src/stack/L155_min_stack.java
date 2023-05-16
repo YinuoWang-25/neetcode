@@ -21,7 +21,9 @@ public class L155_min_stack {
     }
 
     public void pop() {
-        if (min == stack.pollFirst()) {
+        int cur = stack.pollFirst();
+
+        if (min == cur) {
             min = stack.pollFirst();
         }
     }

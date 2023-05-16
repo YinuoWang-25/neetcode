@@ -1,7 +1,7 @@
 package binary_search;
 
 public class L4_median_two_sorted_arrays {
-    public double findMedianSortedArrays(int nums1[], int nums2[]) {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int n = nums1.length + nums2.length;
 
         if (n % 2 == 0) {
@@ -12,7 +12,6 @@ public class L4_median_two_sorted_arrays {
 
     }
 
-    // find kth number of two sorted array
     private int findKth(int[] nums1, int start1, int[] nums2, int start2, int k) {
         if (start1 >= nums1.length) {
             return nums2[start2 + k - 1];

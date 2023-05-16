@@ -30,7 +30,7 @@ public class L138_copy_list_random_pointer {
 
             head = head.next;
         }
-        
+
         return map.get(first);
     }
 }

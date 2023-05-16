@@ -3,9 +3,6 @@ package linked_list;
 import common.ListNode;
 
 public class L25_reverse_nodes_in_k_group {
-    /**
-     * recursive
-     */
     public ListNode reverseKGroup(ListNode head, int k) {
         if (head == null) return null;
         ListNode h = head, p = head;

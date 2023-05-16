@@ -31,7 +31,6 @@ class Puzzle {
 
     }
 
-    ;
 }
 
 class MyCode {
@@ -87,9 +86,7 @@ class MyCode {
             if (curLeft.shape != prevRight.shape) {
                 return false;
             }
-            if (curLeft.type == prevRight.type) {
-                return false;
-            }
+            return curLeft.type != prevRight.type;
         }
         return true;
     }

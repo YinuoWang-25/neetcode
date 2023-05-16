@@ -13,20 +13,20 @@ public class L150_evaluate_reverse_polish_notation {
                 stack.offerFirst(Integer.valueOf(token));
                 continue;
             }
-            int a = stack.pop();
-            int b = stack.pop();
+            int a = stack.pollFirst();
+            int b = stack.pollFirst();
             switch (token) {
                 case "+":
-                    stack.push(b + a);
+                    stack.offerFirst(b + a);
                     break;
                 case "-":
-                    stack.push(b - a);
+                    stack.offerFirst(b - a);
                     break;
                 case "*":
-                    stack.push(b * a);
+                    stack.offerFirst(b * a);
                     break;
                 default:
-                    stack.push(b / a);
+                    stack.offerFirst(b / a);
                     break;
             }
         }

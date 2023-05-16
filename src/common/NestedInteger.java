@@ -7,13 +7,9 @@ public class NestedInteger {
     public NestedInteger() {
     }
 
-    ;
-
     // Constructor initializes a single integer.
     public NestedInteger(int value) {
     }
-
-    ;
 
     // @return true if this NestedInteger holds a single integer, rather than a nested list.
     public boolean isInteger() {

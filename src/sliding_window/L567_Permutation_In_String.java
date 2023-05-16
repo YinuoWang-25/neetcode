@@ -11,7 +11,7 @@ public class L567_Permutation_In_String {
             hash[c - 'a']++;
         }
 
-        int left = 0, right= 0, count = s1.length();
+        int left = 0, right = 0, count = s1.length();
 
         while (right < s1.length() - 1) {
             if (hash[s2.charAt(right) - 'a'] > 0) {

@@ -1,14 +1,5 @@
 package stack;
 
-/*
-  For every car, we care about it initial position and time to destination
-  <p>
-  Than we sort all cars by it initial position
-  <p>
-  from last car, we keep the max time we need, and for every car, if it needs more time than previous car, which means
-  it can not catch up front car. So it make a new car fleet
- */
-
 import java.util.Arrays;
 import java.util.Comparator;
 
