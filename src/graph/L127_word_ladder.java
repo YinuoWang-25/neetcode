@@ -20,9 +20,6 @@ public class L127_word_ladder {
 
                 List<String> nexts = getNexts(cur, dict);
                 for (String next : nexts) {
-                    if (!dict.contains(next)) {
-                        continue;
-                    }
                     q.offerLast(next);
                     dict.remove(next);
                 }
@@ -43,7 +40,10 @@ public class L127_word_ladder {
                 if (c == chs[i])
                     continue;
                 chs[i] = c;
-                res.add(new String(chs));
+
+                if (dict.contains(new String(chs))) {
+                    res.add(new String(chs));
+                }
             }
             chs[i] = origin;
         }
