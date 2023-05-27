@@ -1,1 +1,1 @@
-# neetcode
+# Neetcode Solutions
