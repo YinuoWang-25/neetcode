@@ -6,14 +6,15 @@ public class L58_length_of_last_word {
             return 0;
         }
 
-        int last = s.length() - 1;
+        char[] chs = s.toCharArray();
+        int last = chs.length - 1;
 
-        while (last >= 0 && s.charAt(last) == ' ') {
+        while (last >= 0 && chs[last] == ' ') {
             last--;
         }
 
         int start = last;
-        while (start >= 0 && s.charAt(start) != ' ') {
+        while (start >= 0 && chs[start] != ' ') {
             start--;
         }
 
