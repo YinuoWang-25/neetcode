@@ -12,7 +12,7 @@
 - 209 Minimum Size Subarray Sum
 - 71 Simplify Path
 
-## 6/2
+## 6/5
 - 225 Implement Stack using Queues
 - 735 Asteroid Collision
 - 456 132 Pattern
@@ -22,7 +22,19 @@
 - 977 Squares of a Sorted Array
 - 669 Trim a Binary Search Tree
 - 441 Arranging Coins
+- 463 Island Perimeter
 
+## 6/6
+- 1091 Shortest Path in Binary Matrix
+- 752 Open the Lock
+- 802 Find Eventual Safe States
+- 1905 Count Sub Islands
+- 953 Verifying an Alien Dictionary
+- 746 Min Cost Climbing Stairs
+- 1985 Find the Kth Largest Integer in the Array
+- 52 N-Queens II
+- 698 Partition to K Equal Sum Subsets
+- 767 Reorganize String
 
 
 

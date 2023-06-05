@@ -9,15 +9,13 @@ public class L735_asteroid_collision {
 
         for (int i = 0; i < asteroids.length; i++) {
             Integer cur = asteroids[i];
-            while (stack.size() > 0 && asteroids[i] < 0 && stack.peekFirst() > 0) {
+            while (stack.size() > 0 && cur < 0 && stack.peekFirst() > 0) {
                 int prev = stack.pollFirst();
-                if (prev < -asteroids[i]) {
-
-                } else if (prev > -asteroids[i]) {
-                    cur = prev;
-                    break;
-                } else {
+                 if (prev == -cur){
                     cur = null;
+                    break;
+                }else if (prev > -cur) {
+                    cur = prev;
                     break;
                 }
             }

@@ -5,16 +5,21 @@ import common.ListNode;
 public class L83_remove_duplicates_from_sorted_list {
 
     public ListNode deleteDuplicates(ListNode head) {
-        ListNode dummy = new ListNode(0);
-        ListNode prev = dummy;
+        if (head == null) {
+            return null;
+        }
 
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+
+        ListNode prev = dummy;
         while (head != null) {
             while (head.next != null && head.next.val == head.val) {
                 head = head.next;
             }
 
             prev.next = head;
-            prev = prev.next;
+            prev = head;
             head = head.next;
         }
 
@@ -22,20 +27,23 @@ public class L83_remove_duplicates_from_sorted_list {
     }
 
     public ListNode deleteDuplicatesII(ListNode head) {
-        ListNode dummy = new ListNode(-101);
-        ListNode prev = dummy;
+        if (head == null) {
+            return null;
+        }
 
-        while (head != null) {
-            if (head.val != prev.val) {
-                prev.next = head;
-                prev = prev.next;
+        ListNode prev = head;
+        ListNode cur = head.next;
+        while (cur != null) {
+            if (cur.val != prev.val) {
+                prev.next = cur;
+                prev = cur;
+
             }
-
-            head = head.next;
+            cur = cur.next;
         }
 
         prev.next = null;
 
-        return dummy.next;
+        return head;
     }
 }
