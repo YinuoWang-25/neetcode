@@ -19,7 +19,7 @@ public class L802_find_eventual_safe_states {
         int[] states = new int[nodeCount];
 
         for (int i = 0; i < nodeCount; i++) {
-            if(dfs(graph, i, states)) {
+            if(isSafe(graph, i, states)) {
                 res.add(i);
             }
         }
@@ -27,7 +27,7 @@ public class L802_find_eventual_safe_states {
         return res;
     }
 
-    private boolean dfs(int[][] graph, int start, int[] states){
+    private boolean isSafe(int[][] graph, int start, int[] states){
         if(states[start] != 0) {
             return states[start] == 1;
         }
@@ -35,7 +35,7 @@ public class L802_find_eventual_safe_states {
         states[start] = 2;
 
         for (int next : graph[start]){
-            if(!dfs(graph, next, states)) {
+            if(!isSafe(graph, next, states)) {
                 return false;
             }
         }

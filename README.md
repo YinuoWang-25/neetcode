@@ -27,14 +27,16 @@
 ## 6/6
 - 1091 Shortest Path in Binary Matrix
 - 752 Open the Lock
+- 1985 Find the Kth Largest Integer in the Array
 - 802 Find Eventual Safe States
 - 1905 Count Sub Islands
 - 953 Verifying an Alien Dictionary
 - 746 Min Cost Climbing Stairs
-- 1985 Find the Kth Largest Integer in the Array
 - 52 N-Queens II
 - 698 Partition to K Equal Sum Subsets
 - 767 Reorganize String
 
+## 6/7
+- 67 Add Binary
 
 

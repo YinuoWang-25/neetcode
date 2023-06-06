@@ -13,7 +13,6 @@ public class L1905_count_sub_islands {
             }
         }
 
-
         return res;
     }
 
@@ -31,7 +30,7 @@ public class L1905_count_sub_islands {
 
         boolean res = true;
         for (int d = 0; d < 4; d++) {
-            res &= isSubIsland(grid1, grid2, i + delta[d][0], j + delta[d][1]);
+            res = res && isSubIsland(grid1, grid2, i + delta[d][0], j + delta[d][1]);
         }
 
         return res;
