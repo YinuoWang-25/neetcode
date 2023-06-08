@@ -27,6 +27,8 @@
 ## 6/6
 - 1091 Shortest Path in Binary Matrix
 - 752 Open the Lock
+
+## 6/7
 - 1985 Find the Kth Largest Integer in the Array
 - 802 Find Eventual Safe States
 - 1905 Count Sub Islands
@@ -35,8 +37,21 @@
 - 52 N-Queens II
 - 698 Partition to K Equal Sum Subsets
 - 767 Reorganize String
-
-## 6/7
 - 67 Add Binary
+- 9 Palindrome Number
+- 263 Ugly Number
+
+## 6/8
+- 12 Integer to Roman
+- 13 Roman to Integer
+- 785 Is Graph Bipartite?
+- 187 Repeated DNA Sequences
+- 946 Validate Stack Sequences
+- 1470 Shuffle the Array
+- 678 Valid Parenthesis String
+- 134 Gas Station
+- 846 Hand of Straights
+- 1423 Maximum Points You Can Obtain from Cards
+- 1029 Two City Scheduling
 
 
