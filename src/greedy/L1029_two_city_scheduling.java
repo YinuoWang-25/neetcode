@@ -23,6 +23,7 @@ public class L1029_two_city_scheduling {
                     cityB++;
                 } else {
                     totalCost += costA;
+                    cityA++;
                 }
             }
         }

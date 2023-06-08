@@ -54,4 +54,51 @@
 - 1423 Maximum Points You Can Obtain from Cards
 - 1029 Two City Scheduling
 
+## 6/9
+- 118 Pascal's Triangle
+- 169 Majority Element
+- 280 Wiggle Sort
+- 523 Continuous Subarray Sum
+- 394 Decode String
+- 41 First Missing Positive
 
+## 6/12
+- 7 Reverse Integer
+- 136 Single Number
+- 149 Max Points on a Line
+- 59 Spiral Matrix II
+- 6 Zigzag Conversion
+- 1041 Robot Bounded In Circle
+- 352 Data Stream as Disjoint Intervals
+- 416 Partition Equal Subset Sum
+- 256 Paint House
+- 120 Triangle
+
+## 6/13
+- 680 Valid Palindrome II
+- 303 Range Sum Query - Immutable
+- 304 Range Sum Query 2D - Immutable
+- 665 Non-decreasing Array
+- 496 Next Greater Element I
+- 101 Symmetric Tree
+- 103 Binary Tree Zigzag Level Order Traversal
+- 105 Construct Binary Tree from Preorder and Inorder Traversal
+- 106 Construct Binary Tree from Inorder and Postorder Traversal
+- 108 Convert Sorted Array to Binary Search Tree
+
+## 6/14
+1-D DP
+- 472 Concatenated Words
+- 837 New 21 Game
+- 279 Perfect Squares
+- 343 Integer Break
+- 673 Number of Longest Increasing Subsequence
+- 377 Combination Sum IV
+Stack
+- 1209 Remove All Adjacent Duplicates in String II
+- 402 Remove K Digits
+Heap
+- 1094 Car Pooling
+- 337 House Robber III
+
+------------------ 230 ---------------------
