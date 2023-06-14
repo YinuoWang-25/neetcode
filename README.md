@@ -87,18 +87,30 @@
 - 108 Convert Sorted Array to Binary Search Tree
 
 ## 6/14
-1-D DP
 - 472 Concatenated Words
 - 837 New 21 Game
 - 279 Perfect Squares
 - 343 Integer Break
 - 673 Number of Longest Increasing Subsequence
 - 377 Combination Sum IV
-Stack
-- 1209 Remove All Adjacent Duplicates in String II
 - 402 Remove K Digits
-Heap
-- 1094 Car Pooling
+- 1209 Remove All Adjacent Duplicates in String II
 - 337 House Robber III
+- 1094 Car Pooling
 
------------------- 230 ---------------------
+## 6/15
+- 116 Populating Next Right Pointers in Each Node
+- 367 Valid Perfect Square
+- 69 Sqrt(x)
+- 540 Single Element in a Sorted Array
+- 1011 Capacity To Ship Packages Within D Days
+- 162 Find Peak Element
+- 1721 Swapping Nodes in a Linked List
+- 622 Design Circular Queue
+- 160 Intersection of Two Linked Lists
+- 958 Check Completeness of a Binary Tree
+
+------------------ 240 ---------------------
+
+## 6/16
+
