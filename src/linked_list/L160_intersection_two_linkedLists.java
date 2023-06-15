@@ -4,32 +4,18 @@ import common.ListNode;
 
 public class L160_intersection_two_linkedLists {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        if (headA == null || headB == null) {
-            return null;
-        }
-        int sizeA = getLen(headA);
-        int sizeB = getLen(headB);
-        while (sizeA > sizeB) {
-            headA = headA.next;
-            sizeA--;
-        }
-        while (sizeA < sizeB) {
-            headB = headB.next;
-            sizeB--;
-        }
-        while (headA != null && headA != headB) {
-            headA = headA.next;
-            headB = headB.next;
-        }
-        return headA;
-    }
+        if(headA == null || headB == null) return null;
 
-    private int getLen(ListNode head) {
-        int size = 0;
-        while (head != null) {
-            size++;
-            head = head.next;
+        ListNode a = headA;
+        ListNode b = headB;
+
+        //if a & b have different len, then we will stop the loop after second iteration
+        while( a != b){
+            //for the end of first iteration, we just reset the pointer to the head of another linkedlist
+            a = a == null? headB : a.next;
+            b = b == null? headA : b.next;
         }
-        return size;
+
+        return a;
     }
 }

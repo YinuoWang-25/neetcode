@@ -1,36 +1,40 @@
-package binary_search; /**
- * We use two pointers to mark two layers: parent and next. parent layer is set
- * up already, so we currently will take care of next layer
- * <p>
- * We have a pointer prev which is the prev pointer for current node
- */
+package binary_search;
 
 import common.Node;
+import java.util.*;
 
 public class L116_populating_next_right_pointers {
 
     public Node connect(Node root) {
         if (root == null) {
-            return root;
+            return null;
         }
-        Node parent = root;
-        Node next = parent.left;
-        while (parent != null && next != null) {
+
+        Queue<Node> q = new LinkedList<>();
+        q.offer(root);
+
+        while (q.size() > 0 ) {
+            int size = q.size();
             Node prev = null;
-            while (parent != null) {
+
+            for (int i = 0; i < size; i++) {
+                Node cur = q.poll();
                 if (prev == null) {
-                    prev = parent.left;
+                    prev = cur;
                 } else {
-                    prev.next = parent.left;
-                    prev = prev.next;
+                    prev.next = cur;
+                    prev = cur;
                 }
-                prev.next = parent.right;
-                prev = prev.next;
-                parent = parent.next;
+
+                if (cur.left != null) {
+                    q.offer(cur.left);
+                }
+                if (cur.right != null) {
+                    q.offer(cur.right);
+                }
             }
-            parent = next;
-            next = parent.left;
         }
+
         return root;
     }
 }

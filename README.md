@@ -99,18 +99,29 @@
 - 1094 Car Pooling
 
 ## 6/15
-- 116 Populating Next Right Pointers in Each Node
 - 367 Valid Perfect Square
 - 69 Sqrt(x)
 - 540 Single Element in a Sorted Array
-- 1011 Capacity To Ship Packages Within D Days
 - 162 Find Peak Element
 - 1721 Swapping Nodes in a Linked List
-- 622 Design Circular Queue
 - 160 Intersection of Two Linked Lists
 - 958 Check Completeness of a Binary Tree
-
------------------- 240 ---------------------
+- 116 Populating Next Right Pointers in Each Node
+- 1011 Capacity To Ship Packages Within D Days
+- 622 Design Circular Queue
 
 ## 6/16
+Tree
+- 538 Convert BST to Greater Tree
+- 951 Flip Equivalent Binary Trees
+- 894 All Possible Full Binary Trees
+- 513 Find Bottom Left Tree Value
+- 96 Unique Binary Search Trees
+- 129 Sum Root to Leaf Numbers
+- 701 Insert into a Binary Search Tree
+- 450 Delete Node in a BST
+Graph
+- 399 Evaluate Division
+- 1020 Number of Enclaves
 
+------------------ 250 ---------------------
