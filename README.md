@@ -110,7 +110,7 @@
 - 1011 Capacity To Ship Packages Within D Days
 - 622 Design Circular Queue
 
-## 6/17
+## 6/20
 - 538 Convert BST to Greater Tree
 - 951 Flip Equivalent Binary Trees
 - 95 Unique Binary Search Trees II
@@ -123,8 +123,7 @@
 - 450 Delete Node in a BST
 - 399 Evaluate Division
 
-## 6/19
-- 1406 Stone Game III
+## 6/21
 - 72 Edit Distance
 - 63 Unique Paths II
 - 518 Coin Change II
@@ -134,59 +133,59 @@
 - 173 Binary Search Tree Iterator
 - 560 Subarray Sum Equals K
 - 1020 Number of Enclaves
+- 1406 Stone Game III
 
-## 6/20
-Backtracking
-- 473 Matchsticks to Square
-Greedy
-- 918 Maximum Sum Circular Subarray
-- 978 Longest Turbulent Subarray
-2-D Dp
-- 516 Longest Palindromic Subsequence
-- 877 Stone Game
-- 1140 Stone Game II
-- 64 Minimum Path Sum
-- 221 Maximal Square
-- 474 Ones and Zeroes
-- 926 Flip String to Monotone Increasing
-
-## 6/21
-Array and hashing
+## 6/22
 - 205 Isomorphic Strings
 - 724 Find Pivot Index
 - 290 Word Pattern
 - 912 Sort an Array
-- 554 Brick Wall
 - 122 Best Time to Buy and Sell Stock II
-Graphs
 - 934 Shortest Bridge
 - 721 Accounts Merge
-- 1129 Shortest Path with Alternating Colors
 - 1254 Number of Closed Islands
-
-## 6/22
-- 25 Reverse Nodes in k-Group (linkedlist)
-2-D dynamic programming
-- 309 Best Time to Buy and Sell Stock with Cooldown
 - 494 Target Sum
-- 97 Interleaving String
 - 329 Longest Increasing Path in a Matrix
+
+## 6/26
+- 25 Reverse Nodes in k-Group (linkedlist)
+  2-D dynamic programming
+- 309 Best Time to Buy and Sell Stock with Cooldown
+- 97 Interleaving String
 - 115 Distinct Subsequences
 - 312 Burst Balloons
 - 10 Regular Expression Matching
-- 1547 Minimum Cost to Cut a Stick
+- 516 Longest Palindromic Subsequence
+- 877 Stone Game
+- 1140 Stone Game II
+- 221 Maximal Square
 
-## 6/23
+## 6/27
+Backtracking
+- 473 Matchsticks to Square
+  Greedy
+- 918 Maximum Sum Circular Subarray
+- 978 Longest Turbulent Subarray
+- 64 Minimum Path Sum
+- 474 Ones and Zeroes
+- 926 Flip String to Monotone Increasing
+- 1547 Minimum Cost to Cut a Stick
+- **- 554 Brick Wall**
+- **- 1129 Shortest Path with Alternating Colors**
 - 4 Median of Two Sorted Arrays
-- 460 LFU Cache
-- 146 LRU Cache (linkedlist)
+
+## 6/29
 Advanced Graph
 - 1584  Min Cost to Connect All Points
 - 743 Network Delay Time
 - 778 Swim in Rising Water
 - 787 Cheapest Flights Within K Stops
 - 1514 Path with Maximum Probability
-Greedy
+
+## 6/30
+- 460 LFU Cache
+- 146 LRU Cache (linkedlist)
+- Greedy
 - 45 Jump Game II
 - 1899 Merge Triplets to Form Target Triplet
 - 763 Partition Labels

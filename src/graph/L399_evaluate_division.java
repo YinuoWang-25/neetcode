@@ -4,57 +4,48 @@ import java.util.*;
 
 public class L399_evaluate_division {
     public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
-        Map<String, List<Pair>> graph = new HashMap<>();
+        Map<String, String> roots = new HashMap<>();  //<node, roots of the node>
+        Map<String, Double> ratio = new HashMap<>();   //<node, node / roots>
         for (int i = 0; i < equations.size(); i++) {
-            graph.putIfAbsent(equations.get(i).get(0), new ArrayList<>());
-            graph.putIfAbsent(equations.get(i).get(1), new ArrayList<>());
-            graph.get(equations.get(i).get(0)).add(new Pair(equations.get(i).get(1), values[i]));
-            graph.get(equations.get(i).get(1)).add(new Pair(equations.get(i).get(0), 1 / values[i]));
+            union(roots, ratio, equations.get(i).get(0), equations.get(i).get(1), values[i]);
         }
 
         double[] res = new double[queries.size()];
         for (int i = 0; i < queries.size(); i++) {
-            if (!graph.containsKey(queries.get(i).get(0)) || !graph.containsKey(queries.get(i).get(1))) {
-                res[i] = -1;
+            String s1 = queries.get(i).get(0), s2 = queries.get(i).get(1);
+            if (!roots.containsKey(s1) || !roots.containsKey(s2)
+                    || !find(roots, ratio, s1).equals(find(roots, ratio, s2))) {
+                res[i] = -1.0;
             } else {
-                Double tmp = dfs(queries.get(i).get(0), queries.get(i).get(1), graph, new HashSet<>());
-                res[i] = tmp == null ? -1 : tmp;
+                res[i] = ratio.get(s1) / ratio.get(s2);
             }
         }
         return res;
     }
 
-    private Double dfs(String cur, String second, Map<String, List<Pair>> graph, Set<String> visited) {
-        if (cur.equals(second)) {
-            return 1.0;
+    private void union(Map<String, String> roots, Map<String, Double> ratio, String s1, String s2, double val) {
+        if (!roots.containsKey(s1)) {
+            roots.put(s1, s1);
+            ratio.put(s1, 1.0);
         }
-
-        if (visited.contains(cur)) {
-            return null;
+        if (!roots.containsKey(s2)) {
+            roots.put(s2, s2);
+            ratio.put(s2, 1.0);
         }
-
-        visited.add(cur);
-
-        List<Pair> nexts = graph.get(cur);
-        for (Pair next : nexts) {
-            Double tmp = dfs(next.str, second, graph, visited);
-            if (tmp != null) {
-                visited.remove(cur);
-                return next.val * tmp;
-            }
-        }
-
-        visited.remove(cur);
-        return null;
+        String p1 = find(roots, ratio, s1);
+        String p2 = find(roots, ratio, s2);
+        roots.put(p1, p2);
+        ratio.put(p1, val * ratio.get(s2) / ratio.get(s1));
     }
 
-    class Pair {
-        String str;
-        double val;
-
-        public Pair(String s, double val) {
-            this.str = s;
-            this.val = val;
+    private String find(Map<String, String> roots, Map<String, Double> ratio, String s) {
+        if (s.equals(roots.get(s))) {
+            return s;
         }
+        String parent = roots.get(s);
+        String ancestor = find(roots, ratio, parent);
+        roots.put(s, ancestor);
+        ratio.put(s, ratio.get(s) * ratio.get(parent));
+        return ancestor;
     }
 }

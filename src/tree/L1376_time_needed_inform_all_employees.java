@@ -7,14 +7,14 @@ import java.util.Map;
 
 public class L1376_time_needed_inform_all_employees {
     public int numOfMinutes(int n, int headID, int[] manager, int[] informTime) {
-        Map<Integer, List<Integer>> graph = new HashMap<>();
+        Map<Integer, List<Integer>> tree = new HashMap<>();
 
         for (int i = 0; i < manager.length; i++) {
-            graph.putIfAbsent(manager[i], new ArrayList<>());
-            graph.get(manager[i]).add(i);
+            tree.putIfAbsent(manager[i], new ArrayList<>());
+            tree.get(manager[i]).add(i);
         }
 
-        return getMaxTime(graph, headID, informTime);
+        return getMaxTime(tree, headID, informTime);
     }
 
     private int getMaxTime(Map<Integer, List<Integer>> graph, int start, int[] informTime) {
