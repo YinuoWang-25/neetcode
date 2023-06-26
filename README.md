@@ -149,32 +149,31 @@
 
 ## 6/26
 - 25 Reverse Nodes in k-Group (linkedlist)
-  2-D dynamic programming
 - 309 Best Time to Buy and Sell Stock with Cooldown
 - 97 Interleaving String
 - 115 Distinct Subsequences
-- 312 Burst Balloons
 - 10 Regular Expression Matching
+- 312 Burst Balloons
+- 221 Maximal Square
 - 516 Longest Palindromic Subsequence
 - 877 Stone Game
 - 1140 Stone Game II
-- 221 Maximal Square
 
-## 6/27
-Backtracking
+## 6/30
 - 473 Matchsticks to Square
-  Greedy
-- 918 Maximum Sum Circular Subarray
-- 978 Longest Turbulent Subarray
-- 64 Minimum Path Sum
 - 474 Ones and Zeroes
+- 64 Minimum Path Sum
+- 978 Longest Turbulent Subarray
+- 918 Maximum Sum Circular Subarray
+
+## 7/3
 - 926 Flip String to Monotone Increasing
 - 1547 Minimum Cost to Cut a Stick
 - **- 554 Brick Wall**
 - **- 1129 Shortest Path with Alternating Colors**
 - 4 Median of Two Sorted Arrays
 
-## 6/29
+## 7/4
 Advanced Graph
 - 1584  Min Cost to Connect All Points
 - 743 Network Delay Time
@@ -182,7 +181,7 @@ Advanced Graph
 - 787 Cheapest Flights Within K Stops
 - 1514 Path with Maximum Probability
 
-## 6/30
+## 7/5
 - 460 LFU Cache
 - 146 LRU Cache (linkedlist)
 - Greedy

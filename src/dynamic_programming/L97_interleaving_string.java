@@ -8,6 +8,8 @@ public class L97_interleaving_string {
         char[] chs1 = s1.toCharArray();
         char[] chs2 = s2.toCharArray();
         char[] chs3 = s3.toCharArray();
+
+
         boolean[][] dp = new boolean[chs1.length + 1][chs2.length + 1];
         dp[0][0] = true;
         for (int i = 1; i <= chs1.length; i++) {
