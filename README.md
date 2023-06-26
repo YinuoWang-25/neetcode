@@ -149,43 +149,50 @@
 
 ## 6/26
 - 25 Reverse Nodes in k-Group (linkedlist)
-  2-D dynamic programming
 - 309 Best Time to Buy and Sell Stock with Cooldown
 - 97 Interleaving String
 - 115 Distinct Subsequences
-- 312 Burst Balloons
 - 10 Regular Expression Matching
+- 312 Burst Balloons
+- 221 Maximal Square
 - 516 Longest Palindromic Subsequence
 - 877 Stone Game
 - 1140 Stone Game II
-- 221 Maximal Square
-
-## 6/27
-Backtracking
-- 473 Matchsticks to Square
-  Greedy
-- 918 Maximum Sum Circular Subarray
-- 978 Longest Turbulent Subarray
-- 64 Minimum Path Sum
-- 474 Ones and Zeroes
-- 926 Flip String to Monotone Increasing
-- 1547 Minimum Cost to Cut a Stick
-- **- 554 Brick Wall**
-- **- 1129 Shortest Path with Alternating Colors**
-- 4 Median of Two Sorted Arrays
-
-## 6/29
-Advanced Graph
-- 1584  Min Cost to Connect All Points
-- 743 Network Delay Time
-- 778 Swim in Rising Water
-- 787 Cheapest Flights Within K Stops
-- 1514 Path with Maximum Probability
 
 ## 6/30
-- 460 LFU Cache
+- 473 Matchsticks to Square
+- 474 Ones and Zeroes
+- 64 Minimum Path Sum
+- 978 Longest Turbulent Subarray
+- 918 Maximum Sum Circular Subarray
+
+## 7/3
+- 926 Flip String to Monotone Increasing
+- 1547 Minimum Cost to Cut a Stick
+- 554 Brick Wall
+- 1129 Shortest Path with Alternating Colors
+- 4 Median of Two Sorted Arrays
+
+## 7/4
+### shortest path problems
+#### Dijkstra's algorithm
+1. Worked for **Weighted edges**
+2. No matter directed graph or undirected graph
+3. https://www.youtube.com/watch?v=JLARzu7coEs**
+- 743 Network Delay Time
+- 778 Swim in Rising Water
+- 1514 Path with Maximum Probability
+#### bellman-ford algorithm
+- 787 Cheapest Flights Within K Stops
+### minimum spanning trees
+#### Prim's algorithm
+每次加入一个节点
+#### Kruskal's algorithm
+每次取权重最小的边连接两棵树
+- 1584  Min Cost to Connect All Points
+## 7/5
 - 146 LRU Cache (linkedlist)
-- Greedy
+- 460 LFU Cache
 - 45 Jump Game II
-- 1899 Merge Triplets to Form Target Triplet
 - 763 Partition Labels
+- 1899 Merge Triplets to Form Target Triplet

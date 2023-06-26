@@ -1,5 +1,8 @@
 package binary_search;
 
+// https://www.youtube.com/watch?v=KB9IcSCDQ9k
+
+
 public class L4_median_two_sorted_arrays {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int n = nums1.length + nums2.length;
